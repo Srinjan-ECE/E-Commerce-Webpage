@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-Store by Srinjan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Your E-Store</h1></header>
+      <!-- Profile Button -->
+<div id="profile-container">
+    <button id="profile-button"><h2>Customer's Profile</h2></button>
+    <div id="profile-details" class="hidden">
+        <h2>Customer's Profile</h2>
+        <p><strong>Name:</strong> Mr. XYZ</p>
+        <p><strong>Address:</strong> 123 Main Street, Kolkata, West Bengal</p>
+        <p><strong>Phone:</strong> +91 9876xxxxxx</p>
+    </div>
+</div>
+
+    <div class="banner">5% OFF on orders over ₹5000 & Free Shipping Across India!</div>
+
+    <nav>
+        <a onclick="showSection('products')">Products</a>
+        <a onclick="showSection('cart')">Cart</a>
+        <a onclick="showSection('contact')">Contact</a>
+        <a onclick="showSection('track')">Track Order</a>
+    </nav>
+      <div class="container">
+        <section id="products">
+            <h2>Product Listings</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/250" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>₹1000</p>
+                    <input type="number" min="1" max="10" value="1">
+                    <button class="add-to-cart" onclick="addToCart('Product 1', 1000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/250" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>₹1200</p>
+                    <input type="number" min="1" max="10" value="1">
+                    <button class="add-to-cart" onclick="addToCart('Product 2', 1125)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/250" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>₹1300</p>
+                    <input type="number" min="1" max="10" value="1">
+                    <button class="add-to-cart" onclick="addToCart('Product 3', 1225)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/250" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p>₹1400</p>
+                    <input type="number" min="1" max="10" value="1">
+                    <button class="add-to-cart" onclick="addToCart('Product 4', 1350)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/250" alt="Product 5">
+                    <h3>Product 5</h3>
+                    <p>₹1500</p>
+                    <input type="number" min="1" max="10" value="1">
+                    <button class="add-to-cart" onclick="addToCart('Product 5', 1450)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="hidden">
+            <h2>Your Cart</h2>
+            <div id="cart-content"></div>
+        </section>
+        <section id="checkout" class="hidden">
+            <h2>Checkout</h2>
+            <div>
+                <a onclick="showSection('checkout')">Checkout</a>
+                <button id="checkout-button" onclick="checkout()">Checkout</button>
+                <button class="checkout" onclick="showPaymentForm()">Add Payment Method</button>
+                <button class="checkout" onclick="showAddressForm()">Add Address</button>
+                <p><h3>Add payment details and address to continue.</h3></p>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden">
+            <h1>Contact Us</h1>
+            <div class="contact-section">
+                <p>Owner: Mr. SRINJAN DEB</p>
+                <p>Phone Number: +91 933053xxxx</p>
+                <p>Email: info@your_store.com</p>
+                <p>Contact us for any complaints related to your order (Please Mention the Order ID).</p>
+
+               <div style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 25vh;"></div>
+                <p><h2>Website Credit:</h2></p>
+                <p>SRINJAN DEB</p>
+                <p>Department of Electronics & Communication Engineering</p>
+                <p>Techno Main Saltlake</p>
+                <p>Contact: +91 8274034631 & Email: srinjandeb403@gmail.com</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="track" class="hidden">
+            <div style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 35vh;">
+                <p><h2>Track Your Order</h2></p>
+                <p><h3>You can track your recent order here live once it is out for delivery</h3></p>
+                <p><h2>Thank You For Shopping With Us, Have A Nice Day!</h2></p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22625.3385246034!2d88.34766380234386!3d22.572645515434755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02773ed914f7f7%3A0xd47e48250c7aaf82!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1674563427898!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Your E-Store by Srinjan. All Rights Reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
