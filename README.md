@@ -36,7 +36,7 @@ Users are alerted to add payment details and shipping information to complete th
 **7. Contact Section**
 Provides essential contact details:
 Store Owner: Mr. Srinjan Deb.
-Contact Number: +91 8274034631.
+Contact Number
 Email: srinjandeb403@gmail.com.
 Encourages users to reach out for queries, complaints, or support, especially for order-related issues (with the order ID).
 **8. Order Tracking**
